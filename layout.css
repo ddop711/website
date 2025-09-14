@@ -1,0 +1,158 @@
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  .apple84 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+
+  .code {
+    grid-column: 3 / span 2;
+  }
+  .keyboard {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 900px) {
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    .apple84 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    .desktop {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    .intel-chip {
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    .code {
+      grid-column: span 2;
+    }
+
+    .macbook {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .keyboard {
+      grid-column: span 2;
+    }
+  }
+
+  .logo {
+    width: 120px;
+    height: auto;
+    margin-inline: auto;
+  }
+
+  p {
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  dl.grid_1-1 {
+    display: grid;
+
+    .pc {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .pc2 {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .windows {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .windows2 {
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .tablet {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    .tablet2 {
+      grid-column: 1;
+      grid-row: 4;
+    }
+    .smartphone {
+      grid-column: 2;
+      grid-row: 3;
+    }
+    .smartphone2 {
+      grid-column: 2;
+      grid-row: 4;
+    }
+    dd {
+      margin-top: -20px;
+    }
+  }
+
+  .order {
+    order: -10;
+  }
+
+  .grid_5-3 {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+  }
+
+  .grid_2-3 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .grid_3-2 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .grid_1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .flex_col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .flex_col :last-child {
+      margin-top: auto;
+    }
+  }
+  .logo {
+    width: 120px;
+    height: auto;
+    margin-left: 0;
+  }
+  .tablet {
+    width: auto;
+    height: auto;
+    max-height: 400px;
+  }
+}
